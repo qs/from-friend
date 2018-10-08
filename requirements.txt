@@ -1,3 +1,7 @@
 Django==2.1.2
+django-filter==2.0.0
+django-rest-registration==0.3.12
+djangorestframework==3.8.2
+Markdown==3.0.1
 pkg-resources==0.0.0
 pytz==2018.5
