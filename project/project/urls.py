@@ -15,6 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from rest_framework_swagger.views import get_swagger_view
+
+
+schema_view = get_swagger_view(title='From Friend API')
 
 api_urlpatterns = [
     path('accounts/', include('rest_registration.api.urls')),
@@ -23,4 +27,5 @@ api_urlpatterns = [
 urlpatterns = [
     path('api/', include(api_urlpatterns)),
     path('admin/', admin.site.urls),
+    path('', schema_view)
 ]
