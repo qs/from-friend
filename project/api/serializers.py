@@ -6,3 +6,9 @@ class CategorySerializer(serializers.ModelSerializer):
     class Meta:
         model = models.Category
         fields = ('id', 'name')
+
+
+class SubscriptionSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = models.Subscription
+        fields = ('id', 'name', 'id', 'category')
