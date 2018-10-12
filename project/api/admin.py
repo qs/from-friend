@@ -1,3 +1,12 @@
 from django.contrib import admin
+from .models import Category, Subscription
 
-# Register your models here.
+
+@admin.register(Category)
+class AuthorAdmin(admin.ModelAdmin):
+    pass
+
+
+@admin.register(Subscription)
+class AuthorAdmin(admin.ModelAdmin):
+    pass
